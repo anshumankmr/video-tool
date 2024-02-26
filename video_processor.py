@@ -93,5 +93,5 @@ class VideoProcessor:
             output_audio_path = f"{mp4_file_path.split('.')[0]}.mp3"
             video.audio.write_audiofile(output_audio_path, codec='libmp3lame')
             return output_audio_path
-        except:
+        except Exception:
             return None
